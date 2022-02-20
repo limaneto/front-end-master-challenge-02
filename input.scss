@@ -1,6 +1,6 @@
 @import url('https://fonts.google.com/specimen/Outfit');
 
-$font-size: '65%';
+$font-size: 65%;
 $font-stack: Outfit, sans-serif;
 $white-color: hsl(0, 0%, 100%);
 $light-grey-color: hsl(212, 45%, 89%);
@@ -32,34 +32,27 @@ main {
   flex-direction: column;
   margin: auto;
   width: 80vw;
-  max-width: 300px;
+  max-width: 340px;
   background-color: $white-color;
   padding: 16px;
   border-radius: 18px;
-}
-
-#qr-code {
-  margin: 0 auto;
-  width: 70vw;
-  max-width: 260px;
-  height: 70vw;
-  max-height: 260px;
-  background-image: url("./images/image-qr-code.png");
-  background-size: contain;
-  border-radius: 18px;
-  background-repeat: no-repeat;
+  
+  > img {
+    border-radius: 18px;
+  }
 }
 
 #info {
   h1 {
-    font-size: 1.2em;
+    color: $dark-blue-color;
+    font-size: 5em;
     padding-bottom: 16px;
     line-height: 26px;
   }
   
   p {
-    font-size: 1em;
+    font-size: 3.2em;
     color: $grayish-blue-color;
   }
-  padding: 16px;
+  padding:  24px 0;
 }
